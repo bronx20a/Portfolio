@@ -5,10 +5,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&display=swap" rel="stylesheet">
 <script src="https://use.fontawesome.com/3d2f7e8eb6.js"></script>
+
 </head>
 <body>
 <header>
-<h1>Tony Hemphill</h1>
+<h1 class="logo">Tony Hemphill</h1>
 <nav class="navigation">
 <a href="#About">Who I am</a>
 <a href="#Gallery">What I've Done</a>
@@ -18,26 +19,70 @@
 <section id="About">
 <img class="profilepic" src="./portfoliopic.jpeg" />
 <h2 class="about-title">Who I am</h2>
-<p class="about-description">My name is Tony, I am a freelance front-end web developer from New England. 
+<p class="about-description">My name is Tony, I am a recent college graduate from New England. 
 I learned web design during the pandemic and I have honed my skills to bring my ideas to life. I am 
 the founder of The Central Post, which is a news analysis blog that I designed and published. Since the site's launch,
 I have published eighteen articles across three genres with new content published weekly.</p>
+<p class="about-description" style="padding-top: 0px">I graduated from undergraduate study in May 2020, <em>Magna
+    Cum Laude</em>, with a degree in Business and Politics. During my undergraduate career,
+    I conducted extensive research into economic and political trends both domestic and abroad. I received
+    high honors for my thesis research, which focused on African American political participation
+    in southern states after the repeal of certain provisions of the Voting Rights Act.</p>
+<div class="about-description" id="read-more">
+    <h2>Education</h2>
+    <h3>Bachelor of Arts <em>Magna Cum Laude</em>, Politics & Business</h3>
+    <h4>Saint Anselm College, Manchester, NH 03102</h4>
+    <ul>
+        <li><p>GPA: 3.63</p></li>
+        <li><p>Honors: Dean's List Scholar, Talent Achievement Scholarship recipient</p></li>
+        <li>Societies: Alpha Lambda Delta National Honor Society for First-Year Students, National Society of Leadership and Success</li>
+    </ul>
+    <h2>Experience</h2>
+    <h3>Founder, The Central Post</h3>
+    <p>Develop, maintain, and create content for over a thousand viewers per month. Provide nuanced, thoughtful analysis
+        of politics, financial markets, and sports. Write up to 4,500 words per week. Written over ten thousand total words since 
+        founding the organization.
+    </p>
+    <h3>Freelance designer/writer, Fiverr</h3>
+    <p>Create custom web design projects for one-hundred clients per month. Write up to twenty content
+        articles for blog and news sources per month. 
+    </p>
+    <h2>Skills & Certifications</h2>
+    <ul>
+    <li>HTML5 Certification, 2020, Codecademy</li>
+    <li>CSS3 Certification, 2020, Codecademy</li>
+    <li>JavaScript Certification, 2020, Codecademy</li>
+    <li>Building Interactive Websites With JavaScript, 2021, Codecademy</li>
+    <li>Build a Website With HTML, CSS, and GitHub Pages, 2021, Codecademy</li>
+    </ul>
+
+</div>
+<button id="open-button">View Resume</button>
+<button id="close-button">Hide Resume</button>
 </section>
 <section id="Gallery">
     <h2 class="gallery-title">What I've Done</h2>
     <img class="gallery-image" src="./CentralPostcapture.png" />
     <img class="gallery-image" src="./CentralPostArticleCapture.png" />
+    <p class="gallery-description">These are snapshots of the landing page and 
+        article layout for The Central Post. The site is fully responsive, mobile-friendly,
+        and utilizes a css grid layout. The site consists of over twenty pages completed with
+        a complement of HTML, CSS, JavaScript, and PHP coding languages. To date, The Central Post has driven
+        significant user traffic and said traffic has been increasing steadily in the first three months that the 
+        site has been active. Check out The Central Post <a href="#"><u>here</u></a>.
+    </p>
 </section>
-<section id="contact">
+<section class="contact" id="contact">
     <h2 class="contact-title">Get In Touch</h2>
-    <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
-    <i class="fa fa-github-square fa-5x"></i>
-    <i class="fa fa-linkedin fa-5x"></i>
-    <p class="contact-description">Do you have any comments? Questions? Inquries? Please don't hesitate
+    <a href="mailto:tonyhemphill63@gmail.com"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
+    <a href="https://github.com/bronx20a" target="_blank"><i class="fa fa-github-square fa-5x"></i></a>
+    <a href="https://www.linkedin.com/in/anthony-hemphill-2aa7b31b9/" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a>
+    <p class="contact-description">Do you have any comments? Questions? Inquries? Please, don't hesitate
         to reach out to these addresses.
     </p>
     </section>
 <footer>
 </footer>
 </body>
+<script src="portfolioscript.js"></script>
 </html>

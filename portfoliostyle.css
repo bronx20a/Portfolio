@@ -1,5 +1,7 @@
 body {
 font-family: "Open Sans", serif;
+min-height: 900px;
+max-height: 2160px;
 }
 h1,
 h2,
@@ -22,7 +24,7 @@ nav a {
 padding-right: 20px;
 }
 section {
-height: 1000px;
+
 
 }
 .about-title {
@@ -44,7 +46,32 @@ padding: 30px 0px;
 display: block;
 margin: auto;
 width: 80%;
-height: 60%;
+height: 600px;
 text-align: center;
-opacity: 0.5;
+opacity: 0.6;
+}
+.gallery-title {
+    text-align: center;
+    font-size: 60px;
+}
+.gallery-image {
+
+   width: 45%;
+   height: 50%; 
+   padding: 10px 35px;
+   float: left;
+}
+.contact-title {
+    text-align: center;
+    font-size: 60px;
+}
+#contact i {
+    padding: 10px;
+    text-align: middle;
+    position: static;
+    
+}
+.contact-description {
+    font-size: 20px;
+    text-align: center;
 }

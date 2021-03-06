@@ -1,32 +1,71 @@
 body {
 font-family: "Open Sans", serif;
-min-height: 900px;
+min-width: 200px;
+max-width: 2160px;
+min-height: 200px;
 max-height: 2160px;
+animation: fadeInAnimation ease 3s;
+animation-iteration-count: 1; 
+animation-fill-mode: forwards;
+background-color: #C2BDBC;
+box-sizing: border-box;
+margin: 0px;
+
 }
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 font-family: "Oswald";
 }
 header {
 display: inline-block;
-padding: 10px;
-margin: 0px 15px;
+position: fixed;
+top: 0px;
+overflow: visible;
+z-index: 1;
+width: 100%;
+height: 15%;
+background-color: white;
+opacity: 0.9;
 }
 nav {
 position: absolute;
 right: 0px;
-top: 50px;
+top: 80px;
+margin-right: 50px;
+
 }
 a {
 text-decoration: none;
 color: black;
 }
+
+.logo {
+font-size: 50px;
+margin-left: 50px;
+}
 nav a:hover {
     color: gray;
 }
+nav a:active {
+    background-color: gray;
+}
 nav a {
 padding-right: 20px;
+transition: 500ms 500ms ease-out;
+font-size: 20px;
+}
+#About {
+    margin-top: 150px;
 }
 .about-title {
 font-size: 60px;
@@ -34,7 +73,8 @@ text-align: center;
 color: black;
 position: absolute;
 top: 400px;
-left: 600px;
+left: 0px;
+width: 100%;
 }
 .about-description {
 font-size: 20px;
@@ -53,9 +93,13 @@ button {
   font-size: 20px;
   color: white;
   cursor: pointer;
+  transition: text-decoration 300ms 300ms ease-out;
 }
 button:hover {
     text-decoration: underline;
+}
+button:active {
+    background-color: gray;
 }
 #read-more {
 padding-top: 0px;
@@ -72,6 +116,7 @@ height: 600px;
 text-align: center;
 opacity: 0.6;
 }
+
 .gallery-title {
     text-align: center;
     font-size: 60px;
@@ -88,6 +133,7 @@ opacity: 0.6;
     display: block;
     margin: 0 auto;
     text-align: center;
+    clear: both;
 }
 .contact-title {
     text-align: center;
@@ -97,7 +143,11 @@ opacity: 0.6;
     padding: 10px;
     margin: 0 auto;
     position: static;
+    transition: color 500ms 500ms ease-out;
     
+}
+#contact i:hover {
+    color: blue;
 }
 .contact-description {
     font-size: 20px;
@@ -107,5 +157,91 @@ opacity: 0.6;
 font-size: 20px;
 width: 80%;
 margin: 0px auto;
-
+clear: both;
+}
+@media screen and (max-width: 767px) {
+    header {
+        width: 100%;
+        height: 20%;
+    }
+    #about {
+        margin-top: 300px;
+    }
+    nav {
+        position: static;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    nav a {
+        padding-right: 0px;
+        padding-left: 10px;
+        font-size: 17px;
+    }
+    nav a:before {
+        padding-left: 0px;
+    }
+    .logo {
+        margin: 10px;
+        text-align: center;
+    }
+    .about-image {
+        height: 10%;
+    }
+    .gallery-image {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media screen and (width: 320px) {
+    header {
+        height: 25%;
+    }
+    nav a {
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 374px) {
+   #About {
+       margin-top: 0px;
+   }
+   nav a {
+       font-size: 12px;
+   }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+header {
+    height: 15%;
+}
+.gallery-image {
+    width: 80%;
+    margin-left: 6.5%;
+}
+}
+@media screen and (max-height: 700px) {
+    header {
+        position: static;
+    }
+}
+@media screen and (max-width: 375px) and (max-height: 667px) {
+    #About {
+        margin-top: 0px;
+    }
+}
+@media screen and (width: 768px) {
+    nav {
+        margin-right: 30px;
+        top: 70px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+}
+@media screen and (width: 1024px) and (height: 1366px) {
+    header {
+        height: 10%;
+    }
+    nav {
+        top: 70px;
+    }
 }
